@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/laura/G4CATS
+CMAKE_SOURCE_DIR = /home/laura/G4CATS_root_input_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/laura/G4CATS/build
+CMAKE_BINARY_DIR = /home/laura/G4CATS_root_input_2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/laura/G4CATS/build/CMakeFiles /home/laura/G4CATS/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laura/G4CATS_root_input_2/build/CMakeFiles /home/laura/G4CATS_root_input_2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/laura/G4CATS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laura/G4CATS_root_input_2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,6 +198,78 @@ exampleB4c.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/exampleB4c.cc.s
 .PHONY : exampleB4c.cc.s
 
+src/B4FileGenerator.o: src/B4FileGenerator.cc.o
+.PHONY : src/B4FileGenerator.o
+
+# target to build an object file
+src/B4FileGenerator.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4FileGenerator.cc.o
+.PHONY : src/B4FileGenerator.cc.o
+
+src/B4FileGenerator.i: src/B4FileGenerator.cc.i
+.PHONY : src/B4FileGenerator.i
+
+# target to preprocess a source file
+src/B4FileGenerator.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4FileGenerator.cc.i
+.PHONY : src/B4FileGenerator.cc.i
+
+src/B4FileGenerator.s: src/B4FileGenerator.cc.s
+.PHONY : src/B4FileGenerator.s
+
+# target to generate assembly for a file
+src/B4FileGenerator.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4FileGenerator.cc.s
+.PHONY : src/B4FileGenerator.cc.s
+
+src/B4FileGeneratorMkin.o: src/B4FileGeneratorMkin.cc.o
+.PHONY : src/B4FileGeneratorMkin.o
+
+# target to build an object file
+src/B4FileGeneratorMkin.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4FileGeneratorMkin.cc.o
+.PHONY : src/B4FileGeneratorMkin.cc.o
+
+src/B4FileGeneratorMkin.i: src/B4FileGeneratorMkin.cc.i
+.PHONY : src/B4FileGeneratorMkin.i
+
+# target to preprocess a source file
+src/B4FileGeneratorMkin.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4FileGeneratorMkin.cc.i
+.PHONY : src/B4FileGeneratorMkin.cc.i
+
+src/B4FileGeneratorMkin.s: src/B4FileGeneratorMkin.cc.s
+.PHONY : src/B4FileGeneratorMkin.s
+
+# target to generate assembly for a file
+src/B4FileGeneratorMkin.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4FileGeneratorMkin.cc.s
+.PHONY : src/B4FileGeneratorMkin.cc.s
+
+src/B4FileGeneratorTree.o: src/B4FileGeneratorTree.cc.o
+.PHONY : src/B4FileGeneratorTree.o
+
+# target to build an object file
+src/B4FileGeneratorTree.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4FileGeneratorTree.cc.o
+.PHONY : src/B4FileGeneratorTree.cc.o
+
+src/B4FileGeneratorTree.i: src/B4FileGeneratorTree.cc.i
+.PHONY : src/B4FileGeneratorTree.i
+
+# target to preprocess a source file
+src/B4FileGeneratorTree.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4FileGeneratorTree.cc.i
+.PHONY : src/B4FileGeneratorTree.cc.i
+
+src/B4FileGeneratorTree.s: src/B4FileGeneratorTree.cc.s
+.PHONY : src/B4FileGeneratorTree.s
+
+# target to generate assembly for a file
+src/B4FileGeneratorTree.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4FileGeneratorTree.cc.s
+.PHONY : src/B4FileGeneratorTree.cc.s
+
 src/B4PrimaryGeneratorAction.o: src/B4PrimaryGeneratorAction.cc.o
 .PHONY : src/B4PrimaryGeneratorAction.o
 
@@ -221,6 +293,30 @@ src/B4PrimaryGeneratorAction.s: src/B4PrimaryGeneratorAction.cc.s
 src/B4PrimaryGeneratorAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.s
 .PHONY : src/B4PrimaryGeneratorAction.cc.s
+
+src/B4PrimaryGeneratorMessenger.o: src/B4PrimaryGeneratorMessenger.cc.o
+.PHONY : src/B4PrimaryGeneratorMessenger.o
+
+# target to build an object file
+src/B4PrimaryGeneratorMessenger.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorMessenger.cc.o
+.PHONY : src/B4PrimaryGeneratorMessenger.cc.o
+
+src/B4PrimaryGeneratorMessenger.i: src/B4PrimaryGeneratorMessenger.cc.i
+.PHONY : src/B4PrimaryGeneratorMessenger.i
+
+# target to preprocess a source file
+src/B4PrimaryGeneratorMessenger.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorMessenger.cc.i
+.PHONY : src/B4PrimaryGeneratorMessenger.cc.i
+
+src/B4PrimaryGeneratorMessenger.s: src/B4PrimaryGeneratorMessenger.cc.s
+.PHONY : src/B4PrimaryGeneratorMessenger.s
+
+# target to generate assembly for a file
+src/B4PrimaryGeneratorMessenger.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorMessenger.cc.s
+.PHONY : src/B4PrimaryGeneratorMessenger.cc.s
 
 src/B4RunAction.o: src/B4RunAction.cc.o
 .PHONY : src/B4RunAction.o
@@ -366,6 +462,30 @@ src/B4cEventAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.s
 .PHONY : src/B4cEventAction.cc.s
 
+src/B4cEventActionMessenger.o: src/B4cEventActionMessenger.cc.o
+.PHONY : src/B4cEventActionMessenger.o
+
+# target to build an object file
+src/B4cEventActionMessenger.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4cEventActionMessenger.cc.o
+.PHONY : src/B4cEventActionMessenger.cc.o
+
+src/B4cEventActionMessenger.i: src/B4cEventActionMessenger.cc.i
+.PHONY : src/B4cEventActionMessenger.i
+
+# target to preprocess a source file
+src/B4cEventActionMessenger.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4cEventActionMessenger.cc.i
+.PHONY : src/B4cEventActionMessenger.cc.i
+
+src/B4cEventActionMessenger.s: src/B4cEventActionMessenger.cc.s
+.PHONY : src/B4cEventActionMessenger.s
+
+# target to generate assembly for a file
+src/B4cEventActionMessenger.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/B4cEventActionMessenger.cc.s
+.PHONY : src/B4cEventActionMessenger.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -382,9 +502,21 @@ help:
 	@echo "... exampleB4c.o"
 	@echo "... exampleB4c.i"
 	@echo "... exampleB4c.s"
+	@echo "... src/B4FileGenerator.o"
+	@echo "... src/B4FileGenerator.i"
+	@echo "... src/B4FileGenerator.s"
+	@echo "... src/B4FileGeneratorMkin.o"
+	@echo "... src/B4FileGeneratorMkin.i"
+	@echo "... src/B4FileGeneratorMkin.s"
+	@echo "... src/B4FileGeneratorTree.o"
+	@echo "... src/B4FileGeneratorTree.i"
+	@echo "... src/B4FileGeneratorTree.s"
 	@echo "... src/B4PrimaryGeneratorAction.o"
 	@echo "... src/B4PrimaryGeneratorAction.i"
 	@echo "... src/B4PrimaryGeneratorAction.s"
+	@echo "... src/B4PrimaryGeneratorMessenger.o"
+	@echo "... src/B4PrimaryGeneratorMessenger.i"
+	@echo "... src/B4PrimaryGeneratorMessenger.s"
 	@echo "... src/B4RunAction.o"
 	@echo "... src/B4RunAction.i"
 	@echo "... src/B4RunAction.s"
@@ -403,6 +535,9 @@ help:
 	@echo "... src/B4cEventAction.o"
 	@echo "... src/B4cEventAction.i"
 	@echo "... src/B4cEventAction.s"
+	@echo "... src/B4cEventActionMessenger.o"
+	@echo "... src/B4cEventActionMessenger.i"
+	@echo "... src/B4cEventActionMessenger.s"
 .PHONY : help
 
 

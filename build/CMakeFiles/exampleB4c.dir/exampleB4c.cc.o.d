@@ -1,6 +1,6 @@
 CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
- /home/laura/G4CATS/exampleB4c.cc /usr/include/stdc-predef.h \
- /home/laura/G4CATS/include/B4cDetectorConstruction.hh \
+ /home/laura/G4CATS_root_input_2/exampleB4c.cc /usr/include/stdc-predef.h \
+ /home/laura/G4CATS_root_input_2/include/B4cDetectorConstruction.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4VUserDetectorConstruction.hh \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
@@ -182,7 +182,63 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /opt/geant4_v10.5.1/include/Geant4/globals.hh \
- /home/laura/G4CATS/include/B4cActionInitialization.hh \
+ /home/laura/G4CATS_root_input_2/include/B4Target.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4Material.hh \
+ /opt/geant4_v10.5.1/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+ /opt/geant4_v10.5.1/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+ /opt/geant4_v10.5.1/include/Geant4/G4Element.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4Isotope.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4IonisParamElm.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4IsotopeVector.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4ElementTable.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4MaterialPropertiesTable.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4MaterialPropertiesIndex.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4MaterialPropertyVector.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4PhysicsOrderedFreeVector.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4PhysicsVector.hh \
+ /usr/include/c++/11/fstream \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/basic_file.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
+ /opt/geant4_v10.5.1/include/Geant4/G4PhysicsVectorType.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4Log.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4PhysicsVector.icc \
+ /opt/geant4_v10.5.1/include/Geant4/G4MaterialPropertiesTable.icc \
+ /opt/geant4_v10.5.1/include/Geant4/G4IonisParamMat.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4Exp.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4Threading.hh \
+ /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /usr/include/c++/11/condition_variable \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/concurrence.h /usr/include/c++/11/future \
+ /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/bits/atomic_futex.h \
+ /usr/include/c++/11/bits/std_function.h \
+ /opt/geant4_v10.5.1/include/Geant4/G4SandiaTable.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4OrderedTable.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4DataVector.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4DataVector.icc \
+ /usr/include/assert.h \
+ /opt/geant4_v10.5.1/include/Geant4/G4ElementVector.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4MaterialTable.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4NistManager.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4Material.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4NistElementBuilder.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4NistMaterialBuilder.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4ICRU90StoppingData.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4LPhysicsFreeVector.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4PhysicsFreeVector.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4Pow.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4ThreeVector.hh \
+ /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /opt/geant4_v10.5.1/include/Geant4/CLHEP/Utility/defs.h \
+ /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /home/laura/G4CATS_root_input_2/include/B4cActionInitialization.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4VUserActionInitialization.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4RunManager.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4RunManagerKernel.hh \
@@ -198,27 +254,11 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4Track.hh \
  /opt/geant4_v10.5.1/include/Geant4/trkdefs.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4ThreeVector.hh \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Utility/defs.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc \
  /opt/geant4_v10.5.1/include/Geant4/G4LogicalVolume.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4Region.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4GeomSplitter.hh \
  /opt/geant4_v10.5.1/include/Geant4/geomwdefs.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4AutoLock.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Threading.hh \
- /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/bits/this_thread_sleep.h \
- /usr/include/c++/11/condition_variable \
- /usr/include/c++/11/bits/shared_ptr.h \
- /usr/include/c++/11/bits/shared_ptr_base.h \
- /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/ext/concurrence.h /usr/include/c++/11/future \
- /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
- /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/bits/atomic_futex.h \
- /usr/include/c++/11/bits/std_function.h \
  /opt/geant4_v10.5.1/include/Geant4/G4Allocator.hh \
  /usr/include/c++/11/cstddef \
  /opt/geant4_v10.5.1/include/Geant4/G4AllocatorPool.hh \
@@ -235,8 +275,6 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationX.h \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationX.icc \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Units/PhysicalConstants.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Units/SystemOfUnits.h \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationY.h \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationY.icc \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationZ.h \
@@ -261,34 +299,6 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4ReferenceCountedHandle.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4VUserTrackInformation.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4PhysicsModelCatalog.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Material.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Element.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Isotope.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4IonisParamElm.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4IsotopeVector.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4ElementTable.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4MaterialPropertiesTable.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4MaterialPropertiesIndex.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4MaterialPropertyVector.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4PhysicsOrderedFreeVector.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4PhysicsVector.hh \
- /usr/include/c++/11/fstream \
- /usr/include/c++/11/x86_64-redhat-linux/bits/basic_file.h \
- /usr/include/c++/11/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc \
- /opt/geant4_v10.5.1/include/Geant4/G4PhysicsVectorType.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Log.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4PhysicsVector.icc \
- /opt/geant4_v10.5.1/include/Geant4/G4MaterialPropertiesTable.icc \
- /opt/geant4_v10.5.1/include/Geant4/G4IonisParamMat.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Exp.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4SandiaTable.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4OrderedTable.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4DataVector.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4DataVector.icc \
- /usr/include/assert.h \
- /opt/geant4_v10.5.1/include/Geant4/G4ElementVector.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4MaterialTable.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4Track.icc \
  /opt/geant4_v10.5.1/include/Geant4/G4Step.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4StepPoint.hh \
@@ -604,7 +614,6 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4CrossSectionDataStore.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4VCrossSectionDataSet.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4FastPathHadronicCrossSection.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4PhysicsFreeVector.hh \
  /usr/include/c++/11/functional /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \

@@ -1,31 +1,3 @@
-//
-// ********************************************************************
-// * License and Disclaimer                                           *
-// *                                                                  *
-// * The  Geant4 software  is  copyright of the Copyright Holders  of *
-// * the Geant4 Collaboration.  It is provided  under  the terms  and *
-// * conditions of the Geant4 Software License,  included in the file *
-// * LICENSE and available at  http://cern.ch/geant4/license .  These *
-// * include a list of copyright holders.                             *
-// *                                                                  *
-// * Neither the authors of this software system, nor their employing *
-// * institutes,nor the agencies providing financial support for this *
-// * work  make  any representation or  warranty, express or implied, *
-// * regarding  this  software system or assume any liability for its *
-// * use.  Please see the license in the file  LICENSE  and URL above *
-// * for the full disclaimer and the limitation of liability.         *
-// *                                                                  *
-// * This  code  implementation is the result of  the  scientific and *
-// * technical work of the GEANT4 collaboration.                      *
-// * By using,  copying,  modifying or  distributing the software (or *
-// * any work based  on the software)  you  agree  to acknowledge its *
-// * use  in  resulting  scientific  publications,  and indicate your *
-// * acceptance of all terms of the Geant4 Software license.          *
-// ********************************************************************
-//
-// 
-/// \file B4cEventAction.cc
-/// \brief Implementation of the B4cEventAction class
 
 #include "B4cEventAction.hh"
 #include "B4cCalorimeterSD.hh"
@@ -41,25 +13,33 @@
 #include "Randomize.hh"
 #include <iomanip>
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+#include "B4cEventActionMessenger.hh"
+#include "B4FileGenerator.hh"
+#include "B4RunAction.hh"
+#include "B4Version.hh"
+
+using namespace CLHEP;
 
 B4cEventAction::B4cEventAction()
- : G4UserEventAction(),
-   fCoreHCID(-1),
-   fAnn1HCID(-1),
-   fAnn2HCID(-1),
-   fAnn3HCID(-1),
-   fAnn4HCID(-1),
-   fAnn5HCID(-1),
-   fAnn6HCID(-1)
-{}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+: G4UserEventAction(),
+	fCoreHCID(-1),
+	fAnn1HCID(-1),
+	fAnn2HCID(-1),
+	fAnn3HCID(-1),
+	fAnn4HCID(-1),
+	fAnn5HCID(-1),
+	fAnn6HCID(-1)
+{
+   fEventRate = 0;
+   fReqEvents = 0;
+   feventMessenger = new B4cEventActionMessenger(this);
+   fOutFile=NULL;
+   fOutTree=NULL;
+   fOutFileName=TString("");
+}
 
 B4cEventAction::~B4cEventAction()
 {}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 B4cCalorHitsCollection* 
 B4cEventAction::GetHitsCollection(G4int hcID,
@@ -208,4 +188,110 @@ void B4cEventAction::EndOfEventAction(const G4Event* event)
   analysisManager->AddNtupleRow();  
 }  
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+G4int B4cEventAction::PrepareOutput(){
+	fOutFile=new TFile(fOutFileName,"CREATE");
+
+	return 1;
+
+}
+
+/*
+
+void B4cEventAction::CloseOutput(){
+if(!fCBOut) return;
+  fCBOut->WriteTree();
+  delete fCBOut;
+
+  // write metadata
+#if defined(__clang__)
+    TString compiler("clang ");
+    compiler += __clang_version__;
+#elif defined(__GNUC__)
+    TString compiler("gcc ");
+    compiler += __VERSION__;
+#else
+    TString compiler("unknown");
+#endif
+  TString version(G4Version.c_str());
+  version.ReplaceAll("$", "");
+  version.ReplaceAll(" ", "");
+  version.ReplaceAll("Name:", "");
+  SysInfo_t sysInfo;
+  gSystem->GetSysInfo(&sysInfo);
+  struct utsname unameBuffer;
+  uname(&unameBuffer);
+  TDatime date;
+  TString inputFile("none");
+  if (fPGA->GetFileGen())
+    inputFile = fPGA->GetFileGen()->GetFileName().c_str();
+  TString trackedPart("unknown");
+  if (fPGA->GetFileGen())
+  {
+    trackedPart = "";
+    if (fPGA->GetFileGen()->GetType() == A2FileGenerator::kPlutoCocktail)
+      trackedPart = "all stable (Pluto cocktail)";
+    else if (fPGA->GetFileGen()->GetType() == A2FileGenerator::kGiBUU)
+      trackedPart = "all (GiBUU)";
+    else
+    {
+      for (G4int i = 0; i < fPGA->GetFileGen()->GetNParticles(); i++)
+      {
+        if (fPGA->GetFileGen()->IsParticleTrack(i))
+        {
+            if (trackedPart != "")
+              trackedPart += ", ";
+            trackedPart += TString::Format("%d (%s)", i+1, fPGA->GetFileGen()->GetParticleDefinition(i)->GetParticleName().c_str());
+	}
+      }
+    }
+  }
+
+
+ TNamed meta("A2Geant4 Metadata", TString::Format("\n"
+              "       Version            : %s\n"
+              "       Geant4 Version     : %s\n"
+              "       Compiler           : %s\n"
+              "       Hostname           : %s\n"
+              "       System model       : %s\n"
+              "       OS name            : %s\n"
+              "       OS release         : %s\n"
+              "       OS version         : %s\n"
+              "       OS architecture    : %s\n"
+              "       Command            : %s\n"
+              "       Detector setup     : %s"
+              "       Input file         : %s\n"
+              "       Output file        : %s\n"
+              "       Tracked particles  : %s\n"
+              "       Start time         : %s\n"
+              "       Stop time          : %s\n"
+              "       Tracking time      : %s\n"
+              "       Tracked events     : %d\n"
+              "       Average events/sec : %.2f",
+              B4_VERSION,
+              version.Data(),
+              compiler.Data(),
+              unameBuffer.nodename,
+              sysInfo.fModel.Data(),
+              unameBuffer.sysname,
+              unameBuffer.release,
+              unameBuffer.version,
+              unameBuffer.machine,
+              fInvokeCmd.Data(),
+              fDetSetup.Data(),
+              inputFile.Data(),
+              fOutFile->GetName(),
+              trackedPart.Data(),
+              fStartTime.Data(),
+              date.AsString(),
+              fDuration.Data(),
+              fReqEvents,
+              fEventRate
+              ).Data());
+  meta.Write();
+
+  fOutFile->Close();
+//  if(fOutFile)delete fOutFile;
+
+}
+
+*/

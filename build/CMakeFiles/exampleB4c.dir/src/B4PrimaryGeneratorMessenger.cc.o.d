@@ -1,8 +1,8 @@
-CMakeFiles/exampleB4c.dir/src/B4cCalorHit.cc.o: \
- /home/laura/G4CATS_root_input_2/src/B4cCalorHit.cc \
+CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorMessenger.cc.o: \
+ /home/laura/G4CATS_root_input_2/src/B4PrimaryGeneratorMessenger.cc \
  /usr/include/stdc-predef.h \
- /home/laura/G4CATS_root_input_2/include/B4cCalorHit.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4VHit.hh \
+ /home/laura/G4CATS_root_input_2/include/B4PrimaryGeneratorMessenger.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UImessenger.hh \
  /opt/geant4_v10.5.1/include/Geant4/globals.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4ios.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4Types.hh \
@@ -178,71 +178,59 @@ CMakeFiles/exampleB4c.dir/src/B4cCalorHit.cc.o: \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
- /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/unique_lock.h \
+ /opt/geant4_v10.5.1/include/Geant4/G4UIdirectory.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UIcommand.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UIparameter.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UItokenNum.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4ApplicationState.hh \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /opt/geant4_v10.5.1/include/Geant4/G4THitsCollection.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4VHitsCollection.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Allocator.hh \
- /usr/include/c++/11/cstddef \
- /opt/geant4_v10.5.1/include/Geant4/G4AllocatorPool.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Allocator.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4ThreeVector.hh \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Utility/defs.h \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /opt/geant4_v10.5.1/include/Geant4/G4Threading.hh \
- /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/bits/this_thread_sleep.h \
- /usr/include/c++/11/condition_variable \
+ /opt/geant4_v10.5.1/include/Geant4/globals.hh \
+ /home/laura/G4CATS_root_input_2/include/B4PrimaryGeneratorAction.hh \
+ /opt/root_v6-26-00/include/TString.h /opt/root_v6-26-00/include/Rtypes.h \
+ /opt/root_v6-26-00/include/RtypesCore.h \
+ /opt/root_v6-26-00/include/ROOT/RConfig.hxx \
+ /opt/root_v6-26-00/include/ROOT/../RVersion.h \
+ /opt/root_v6-26-00/include/RConfigure.h \
+ /opt/root_v6-26-00/include/DllImport.h /usr/include/c++/11/cstddef \
+ /opt/root_v6-26-00/include/strtok.h /opt/root_v6-26-00/include/strlcpy.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
+ /usr/include/bits/unistd_ext.h /usr/include/linux/close_range.h \
+ /opt/root_v6-26-00/include/snprintf.h /usr/include/c++/11/atomic \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /opt/root_v6-26-00/include/TGenericClassInfo.h \
+ /opt/root_v6-26-00/include/TSchemaHelper.h \
+ /opt/root_v6-26-00/include/TIsAProxy.h \
+ /opt/root_v6-26-00/include/TVirtualIsAProxy.h \
+ /opt/root_v6-26-00/include/TMathBase.h \
+ /opt/root_v6-26-00/include/ROOT/RStringView.hxx \
+ /usr/include/c++/11/experimental/string_view \
+ /usr/include/c++/11/bits/ranges_base.h \
+ /usr/include/c++/11/experimental/bits/lfts_config.h \
+ /usr/include/c++/11/experimental/bits/string_view.tcc \
+ /opt/root_v6-26-00/include/ROOT/TypeTraits.hxx \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
  /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/ext/concurrence.h /usr/include/c++/11/future \
- /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
- /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/bits/atomic_futex.h \
- /usr/include/c++/11/bits/std_function.h \
- /opt/geant4_v10.5.1/include/Geant4/G4UnitsTable.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4ThreeVector.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4UnitsTable.icc \
- /opt/geant4_v10.5.1/include/Geant4/G4VVisManager.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Transform3D.hh \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Geometry/Transform3D.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Geometry/Transform3D.icc \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/Rotation.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/LorentzVector.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/LorentzVector.icc \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/AxisAngle.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/AxisAngle.icc \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationX.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationX.icc \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Units/PhysicalConstants.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationY.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationY.icc \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationZ.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/RotationZ.icc \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/Rotation.icc \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Geometry/Point3D.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Geometry/Vector3D.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Geometry/Normal3D.h \
- /opt/geant4_v10.5.1/include/Geant4/G4RotationMatrix.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Circle.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4VMarker.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Visible.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Visible.icc \
- /opt/geant4_v10.5.1/include/Geant4/G4Point3D.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Colour.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Color.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4VMarker.icc \
- /opt/geant4_v10.5.1/include/Geant4/G4Colour.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4VisAttributes.hh \
- /opt/geant4_v10.5.1/include/Geant4/graphics_reps_defs.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4VisAttributes.icc
+ /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/cstdarg \
+ /opt/geant4_v10.5.1/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4Types.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UIdirectory.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UIcmdWithAString.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UIcmdWithAnInteger.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UIcmdWithADoubleAndUnit.hh

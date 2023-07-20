@@ -1,63 +1,118 @@
-//
-// ********************************************************************
-// * License and Disclaimer                                           *
-// *                                                                  *
-// * The  Geant4 software  is  copyright of the Copyright Holders  of *
-// * the Geant4 Collaboration.  It is provided  under  the terms  and *
-// * conditions of the Geant4 Software License,  included in the file *
-// * LICENSE and available at  http://cern.ch/geant4/license .  These *
-// * include a list of copyright holders.                             *
-// *                                                                  *
-// * Neither the authors of this software system, nor their employing *
-// * institutes,nor the agencies providing financial support for this *
-// * work  make  any representation or  warranty, express or implied, *
-// * regarding  this  software system or assume any liability for its *
-// * use.  Please see the license in the file  LICENSE  and URL above *
-// * for the full disclaimer and the limitation of liability.         *
-// *                                                                  *
-// * This  code  implementation is the result of  the  scientific and *
-// * technical work of the GEANT4 collaboration.                      *
-// * By using,  copying,  modifying or  distributing the software (or *
-// * any work based  on the software)  you  agree  to acknowledge its *
-// * use  in  resulting  scientific  publications,  and indicate your *
-// * acceptance of all terms of the Geant4 Software license.          *
-// ********************************************************************
-//
-// 
-/// \file B4PrimaryGeneratorAction.hh
-/// \brief Definition of the B4PrimaryGeneratorAction class
 
 #ifndef B4PrimaryGeneratorAction_h
 #define B4PrimaryGeneratorAction_h 1
 
+#include "TString.h" 
+
 #include "G4VUserPrimaryGeneratorAction.hh"
+#include "G4Types.hh"
+
 #include "globals.hh"
 
+class TLorentzVector;
 class G4ParticleGun;
 class G4Event;
+class B4PrimaryGeneratorMessenger;
+class B4cDetectorConstruction;
+class B4FileGenerator;
 
-/// The primary generator action class with particle gum.
-///
-/// It defines a single particle which hits the calorimeter 
-/// perpendicular to the input face. The type of the particle
-/// can be changed via the G4 build-in commands of G4ParticleGun class 
-/// (see the macros provided with this example).
+//Event generator mode
+enum { EPGA_g4, EPGA_phase_space, EPGA_FILE, EPGA_Overlap };
 
 class B4PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
 public:
   B4PrimaryGeneratorAction();    
-  virtual ~B4PrimaryGeneratorAction();
-
-  virtual void GeneratePrimaries(G4Event* event);
+  ~B4PrimaryGeneratorAction();
   
-  // set methods
-  void SetRandomFlag(G4bool value);
+  public:
+  void GeneratePrimaries(G4Event*);
+
+  void SetUpFileInput();
+  void SetInputFile(TString filename){fInFileName=filename;};
+  void SetNParticlesToBeTracked(Int_t n)
+  {
+  	fNToBeTracked = n;
+	fTrackThis = new Int_t[n];
+	for (G4int i = 0; i < fNToBeTracked; i++)
+		fTrackThis[i] = -99;
+  }
+  void SetParticlesToBeTracked(Int_t ipart){if(fTrackThis) fTrackThis[fNToBeTcount++]=ipart;}
+  Int_t *GetParticlesToBeTracked(){return fTrackThis;}
+  Int_t GetNParticlesToBeTracked(){return fNToBeTracked;}
+  G4bool IsTracked(Int_t part)
+  {
+  	for (G4int i = 0; i < fNToBeTracked; i++)
+		if (part == fTrackThis[i])
+			return true;
+	return false;
+  }
+  G4int GetNEvents();
+
+  Int_t GetNGenParticles(){return fNGenParticles;}
+  Int_t GetNGenMaxParticles(){return fNGenMaxParticles;}
+  TLorentzVector* GetGenLorentzVec(Int_t i){return fGenLorentzVec[i];}
+  TLorentzVector** GetGenLorentzVecs(){return fGenLorentzVec;}
+  TLorentzVector* GetBeamLorentzVec(){return fBeamLorentzVec;}
+  Float_t* GetVertex(){return fGenPosition;}
+  Int_t* GetGenPartType(){return fGenPartType;}
+  
+  void SetDetCon(B4cDetectorConstruction* det){fDetCon=det;}
 
 private:
-  G4ParticleGun*  fParticleGun; // G4 particle gun
-};
+  G4ParticleGun* fParticleGun;
+  B4PrimaryGeneratorMessenger* fGunMessenger;
+  B4cDetectorConstruction* fDetCon;
+  TString fInFileName;
+  Int_t fNGenParticles;
+  Int_t fNGenMaxParticles;
+  Float_t fGenPosition[3];
+  TLorentzVector ** fGenLorentzVec;
+  TLorentzVector* fBeamLorentzVec;
+  B4FileGenerator* fFileGen;
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+  Int_t *fGenPartType;
+  Int_t *fTrackThis;
+  Int_t fNToBeTracked;
+  Int_t fNToBeTcount;
+  Int_t fNevent;
+
+  G4int fMode;
+public:
+  void SetMode(G4int mode);
+  G4int GetMode(){return fMode;}
+  B4FileGenerator* GetFileGen() const {return fFileGen; }
+
+private:
+  void PhaseSpaceGenerator(G4Event* anEvent);
+  void OverlapGenerator(G4Event* anEvent);
+  G4float fTmin;
+  G4float fTmax;
+  G4float fThetamin;
+  G4float fThetamax;
+  G4float fBeamEnergy;
+  G4float fBeamXSigma;
+  G4float fBeamYSigma;
+  G4float fBeamDiameter;
+  G4float fTargetZ0;
+  G4float fTargetThick;
+  G4float fTargetRadius;
+  G4float fSplitTheta;
+
+public:
+  void SetTmin(G4float min){fTmin=min;}
+  void SetTmax(G4float max){fTmax=max;}
+  void SetThetamin(G4float min){fThetamin=min;}
+  void SetThetamax(G4float max){fThetamax=max;}
+  void SetBeamEnergy(G4float energy){fBeamEnergy=energy;}
+  void SetBeamXSigma(G4float sigma){fBeamXSigma=sigma;}
+  void SetBeamYSigma(G4float sigma){fBeamYSigma=sigma;}
+  void SetBeamDiameter(G4float d){fBeamDiameter=d;}
+  void SetTargetZ0(G4float z){fTargetZ0=z;}
+  void SetTargetThick(G4float z){fTargetThick=z;}
+  void SetTargetRadius(G4float z){fTargetRadius=z;}
+  void SetSplitTheta(G4float min){fSplitTheta=min;}
+
+};
 
 #endif

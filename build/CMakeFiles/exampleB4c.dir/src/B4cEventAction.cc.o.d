@@ -1,8 +1,9 @@
 CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: \
- /home/laura/G4CATS/src/B4cEventAction.cc /usr/include/stdc-predef.h \
- /home/laura/G4CATS/include/B4cEventAction.hh \
+ /home/laura/G4CATS_root_input_2/src/B4cEventAction.cc \
+ /usr/include/stdc-predef.h \
+ /home/laura/G4CATS_root_input_2/include/B4cEventAction.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4UserEventAction.hh \
- /home/laura/G4CATS/include/B4cCalorHit.hh \
+ /home/laura/G4CATS_root_input_2/include/B4cCalorHit.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4VHit.hh \
  /opt/geant4_v10.5.1/include/Geant4/globals.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4ios.hh \
@@ -208,7 +209,81 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: \
  /usr/include/c++/11/bits/atomic_futex.h \
  /usr/include/c++/11/bits/std_function.h \
  /opt/geant4_v10.5.1/include/Geant4/globals.hh \
- /home/laura/G4CATS/include/B4cCalorimeterSD.hh \
+ /opt/root_v6-26-00/include/TFile.h \
+ /opt/root_v6-26-00/include/Compression.h \
+ /opt/root_v6-26-00/include/RtypesCore.h \
+ /opt/root_v6-26-00/include/ROOT/RConfig.hxx \
+ /opt/root_v6-26-00/include/ROOT/../RVersion.h \
+ /opt/root_v6-26-00/include/RConfigure.h \
+ /opt/root_v6-26-00/include/DllImport.h \
+ /opt/root_v6-26-00/include/TDirectoryFile.h \
+ /opt/root_v6-26-00/include/TDirectory.h \
+ /opt/root_v6-26-00/include/TNamed.h /opt/root_v6-26-00/include/TObject.h \
+ /opt/root_v6-26-00/include/Rtypes.h /opt/root_v6-26-00/include/strtok.h \
+ /opt/root_v6-26-00/include/strlcpy.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /opt/root_v6-26-00/include/snprintf.h \
+ /opt/root_v6-26-00/include/TGenericClassInfo.h \
+ /opt/root_v6-26-00/include/TSchemaHelper.h \
+ /opt/root_v6-26-00/include/TIsAProxy.h \
+ /opt/root_v6-26-00/include/TVirtualIsAProxy.h \
+ /opt/root_v6-26-00/include/TStorage.h \
+ /opt/root_v6-26-00/include/TVersionCheck.h \
+ /opt/root_v6-26-00/include/RVersion.h \
+ /opt/root_v6-26-00/include/TString.h \
+ /opt/root_v6-26-00/include/TMathBase.h \
+ /opt/root_v6-26-00/include/ROOT/RStringView.hxx \
+ /usr/include/c++/11/experimental/string_view \
+ /usr/include/c++/11/bits/ranges_base.h \
+ /usr/include/c++/11/experimental/bits/lfts_config.h \
+ /usr/include/c++/11/experimental/bits/string_view.tcc \
+ /opt/root_v6-26-00/include/ROOT/TypeTraits.hxx \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/cstdarg \
+ /opt/root_v6-26-00/include/TClass.h \
+ /opt/root_v6-26-00/include/TDictionary.h \
+ /opt/root_v6-26-00/include/ESTLType.h \
+ /opt/root_v6-26-00/include/TObjArray.h \
+ /opt/root_v6-26-00/include/TSeqCollection.h \
+ /opt/root_v6-26-00/include/TCollection.h \
+ /opt/root_v6-26-00/include/TIterator.h \
+ /opt/root_v6-26-00/include/TVirtualRWMutex.h \
+ /opt/root_v6-26-00/include/TVirtualMutex.h \
+ /opt/root_v6-26-00/include/ROOT/RRangeCast.hxx \
+ /opt/root_v6-26-00/include/ROOT/RSpan.hxx \
+ /opt/root_v6-26-00/include/ROOT/span.hxx /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h /usr/include/c++/11/cassert \
+ /usr/include/assert.h /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/unordered_set.h \
+ /opt/root_v6-26-00/include/TUUID.h /opt/root_v6-26-00/include/TList.h \
+ /opt/root_v6-26-00/include/TBuffer.h \
+ /opt/root_v6-26-00/include/TDataType.h \
+ /opt/root_v6-26-00/include/Bytes.h /opt/root_v6-26-00/include/Byteswap.h \
+ /opt/root_v6-26-00/include/TDatime.h /opt/root_v6-26-00/include/TUrl.h \
+ /opt/root_v6-26-00/include/ROOT/RConcurrentHashColl.hxx \
+ /opt/root_v6-26-00/include/Rtypes.h \
+ /opt/root_v6-26-00/include/ROOT/TRWSpinLock.hxx \
+ /opt/root_v6-26-00/include/ROOT/TSpinMutex.hxx \
+ /opt/root_v6-26-00/include/TTree.h \
+ /opt/root_v6-26-00/include/ROOT/TIOFeatures.hxx \
+ /opt/root_v6-26-00/include/TArrayD.h /opt/root_v6-26-00/include/TArray.h \
+ /opt/root_v6-26-00/include/TArrayI.h \
+ /opt/root_v6-26-00/include/TAttFill.h \
+ /opt/root_v6-26-00/include/TAttLine.h \
+ /opt/root_v6-26-00/include/TAttMarker.h \
+ /opt/root_v6-26-00/include/TVirtualTreePlayer.h \
+ /opt/root_v6-26-00/include/TBranch.h \
+ /opt/root_v6-26-00/include/TBranchCacheInfo.h \
+ /opt/root_v6-26-00/include/TBits.h /opt/root_v6-26-00/include/TString.h \
+ /home/laura/G4CATS_root_input_2/include/B4cCalorimeterSD.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4VSensitiveDetector.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4VHit.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4Step.hh \
@@ -270,7 +345,6 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4OrderedTable.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4DataVector.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4DataVector.icc \
- /usr/include/assert.h \
  /opt/geant4_v10.5.1/include/Geant4/G4ElementVector.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4MaterialTable.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4LogicalVolume.hh \
@@ -318,8 +392,8 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4TouchableHistory.icc \
  /opt/geant4_v10.5.1/include/Geant4/G4CollectionNameVector.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4VSDFilter.hh \
- /home/laura/G4CATS/include/B4cCalorHit.hh \
- /home/laura/G4CATS/include/B4Analysis.hh \
+ /home/laura/G4CATS_root_input_2/include/B4cCalorHit.hh \
+ /home/laura/G4CATS_root_input_2/include/B4Analysis.hh \
  /opt/geant4_v10.5.1/include/Geant4/g4root.hh \
  /opt/geant4_v10.5.1/include/Geant4/g4root_defs.hh \
  /opt/geant4_v10.5.1/include/Geant4/tools/histo/h1d \
@@ -357,7 +431,6 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/tools/wroot/wbuf \
  /opt/geant4_v10.5.1/include/Geant4/tools/long_out \
  /opt/geant4_v10.5.1/include/Geant4/tools/snpf \
- /usr/include/c++/11/cstdarg \
  /opt/geant4_v10.5.1/include/Geant4/tools/charp_out \
  /opt/geant4_v10.5.1/include/Geant4/tools/stype \
  /opt/geant4_v10.5.1/include/Geant4/tools/typedefs \
@@ -438,11 +511,6 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4VAnalysisManager.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4AnalysisManagerState.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4AnalysisVerbose.hh \
- /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_raw_storage_iter.h \
- /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/shared_ptr_atomic.h \
- /usr/include/c++/11/backward/auto_ptr.h \
  /opt/geant4_v10.5.1/include/Geant4/G4VAnalysisManager.icc \
  /opt/geant4_v10.5.1/include/Geant4/G4HnManager.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4BaseAnalysisManager.hh \
@@ -501,11 +569,7 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: \
  /usr/include/asm/posix_types_64.h /usr/include/asm-generic/posix_types.h \
  /usr/include/bits/statx-generic.h \
  /usr/include/bits/types/struct_statx_timestamp.h \
- /usr/include/bits/types/struct_statx.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
+ /usr/include/bits/types/struct_statx.h \
  /opt/geant4_v10.5.1/include/Geant4/tools/histo/h1d \
  /opt/geant4_v10.5.1/include/Geant4/tools/histo/h2d \
  /opt/geant4_v10.5.1/include/Geant4/tools/histo/h3d \
@@ -683,4 +747,10 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4HCofThisEvent.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4UnitsTable.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4UnitsTable.icc \
- /opt/geant4_v10.5.1/include/Geant4/Randomize.hh
+ /opt/geant4_v10.5.1/include/Geant4/Randomize.hh \
+ /home/laura/G4CATS_root_input_2/include/B4cEventActionMessenger.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UImessenger.hh \
+ /home/laura/G4CATS_root_input_2/include/B4FileGenerator.hh \
+ /home/laura/G4CATS_root_input_2/include/B4RunAction.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4UserRunAction.hh \
+ /home/laura/G4CATS_root_input_2/include/B4Version.hh

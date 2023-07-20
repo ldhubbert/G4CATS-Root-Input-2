@@ -1,54 +1,23 @@
-CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
- /home/laura/G4CATS_root_input_2/src/B4cActionInitialization.cc \
- /usr/include/stdc-predef.h \
- /home/laura/G4CATS_root_input_2/include/B4cActionInitialization.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4VUserActionInitialization.hh \
- /home/laura/G4CATS_root_input_2/include/B4PrimaryGeneratorAction.hh \
- /opt/root_v6-26-00/include/TString.h /opt/root_v6-26-00/include/Rtypes.h \
- /opt/root_v6-26-00/include/RtypesCore.h \
- /opt/root_v6-26-00/include/ROOT/RConfig.hxx \
- /opt/root_v6-26-00/include/ROOT/../RVersion.h \
- /opt/root_v6-26-00/include/RConfigure.h /usr/include/features.h \
- /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+CMakeFiles/exampleB4c.dir/src/B4FileGeneratorTree.cc.o: \
+ /home/laura/G4CATS_root_input_2/src/B4FileGeneratorTree.cc \
+ /usr/include/stdc-predef.h /opt/root_v6-26-00/include/TFile.h \
+ /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
+ /usr/include/bits/wordsize.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/os_defines.h \
+ /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
  /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-64.h /opt/root_v6-26-00/include/DllImport.h \
- /usr/include/c++/11/cstddef \
- /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
- /usr/include/c++/11/x86_64-redhat-linux/bits/os_defines.h \
+ /usr/include/gnu/stubs-64.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/cpu_defines.h \
- /usr/lib/gcc/x86_64-redhat-linux/11/include/stddef.h \
- /usr/include/c++/11/cstdio /usr/include/stdio.h \
- /usr/include/bits/libc-header-start.h \
- /usr/lib/gcc/x86_64-redhat-linux/11/include/stdarg.h \
- /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/bits/time64.h /usr/include/bits/types/__fpos_t.h \
- /usr/include/bits/types/__mbstate_t.h \
- /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h /usr/include/bits/stdio.h \
- /opt/root_v6-26-00/include/strtok.h /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/strings.h \
- /opt/root_v6-26-00/include/strlcpy.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /opt/root_v6-26-00/include/snprintf.h \
- /usr/include/c++/11/type_traits /usr/include/c++/11/typeinfo \
- /usr/include/c++/11/bits/exception.h \
- /usr/include/c++/11/bits/hash_bytes.h /usr/include/c++/11/atomic \
- /usr/include/c++/11/bits/atomic_base.h \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/bits/move.h \
- /opt/root_v6-26-00/include/TGenericClassInfo.h \
- /opt/root_v6-26-00/include/TSchemaHelper.h /usr/include/c++/11/string \
- /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/c++/11/bits/move.h /usr/include/c++/11/type_traits \
+ /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/stl_algobase.h \
@@ -66,11 +35,18 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /usr/include/c++/11/bits/ptr_traits.h /usr/include/c++/11/debug/debug.h \
  /usr/include/c++/11/bits/predefined_ops.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
- /usr/include/wchar.h /usr/include/bits/types/wint_t.h \
- /usr/include/bits/types/mbstate_t.h /usr/include/c++/11/cstdint \
+ /usr/include/wchar.h /usr/include/bits/floatn.h \
+ /usr/include/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-redhat-linux/11/include/stddef.h \
+ /usr/lib/gcc/x86_64-redhat-linux/11/include/stdarg.h \
+ /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
+ /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h /usr/include/c++/11/cstdint \
  /usr/include/c++/11/bits/allocator.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++allocator.h \
  /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \
+ /usr/include/c++/11/bits/exception.h \
  /usr/include/c++/11/bits/localefwd.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \
@@ -115,19 +91,48 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
  /usr/include/alloca.h /usr/include/bits/stdlib-bsearch.h \
  /usr/include/bits/stdlib-float.h /usr/include/c++/11/bits/std_abs.h \
+ /usr/include/c++/11/cstdio /usr/include/stdio.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__fpos64_t.h \
+ /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/stdio.h \
  /usr/include/c++/11/cerrno /usr/include/errno.h \
  /usr/include/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
  /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/functional_hash.h \
- /usr/include/c++/11/bits/basic_string.tcc /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/hash_bytes.h \
+ /usr/include/c++/11/bits/basic_string.tcc \
+ /opt/root_v6-26-00/include/Compression.h \
+ /opt/root_v6-26-00/include/RtypesCore.h \
+ /opt/root_v6-26-00/include/ROOT/RConfig.hxx \
+ /opt/root_v6-26-00/include/ROOT/../RVersion.h \
+ /opt/root_v6-26-00/include/RConfigure.h \
+ /opt/root_v6-26-00/include/DllImport.h /usr/include/c++/11/cstddef \
+ /opt/root_v6-26-00/include/TDirectoryFile.h \
+ /opt/root_v6-26-00/include/TDirectory.h \
+ /opt/root_v6-26-00/include/TNamed.h /opt/root_v6-26-00/include/TObject.h \
+ /opt/root_v6-26-00/include/Rtypes.h /opt/root_v6-26-00/include/strtok.h \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /opt/root_v6-26-00/include/strlcpy.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /opt/root_v6-26-00/include/snprintf.h \
+ /usr/include/c++/11/typeinfo \
+ /opt/root_v6-26-00/include/TGenericClassInfo.h \
+ /opt/root_v6-26-00/include/TSchemaHelper.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /opt/root_v6-26-00/include/TIsAProxy.h \
  /opt/root_v6-26-00/include/TVirtualIsAProxy.h \
+ /opt/root_v6-26-00/include/TStorage.h \
+ /opt/root_v6-26-00/include/TVersionCheck.h \
+ /opt/root_v6-26-00/include/RVersion.h \
+ /opt/root_v6-26-00/include/TString.h \
  /opt/root_v6-26-00/include/TMathBase.h /usr/include/c++/11/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -165,33 +170,79 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/cstdarg \
- /opt/geant4_v10.5.1/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Types.hh \
- /usr/include/c++/11/complex /usr/include/c++/11/sstream \
- /usr/include/c++/11/istream /usr/include/c++/11/ios \
- /usr/include/c++/11/bits/ios_base.h \
+ /opt/root_v6-26-00/include/TClass.h \
+ /opt/root_v6-26-00/include/TDictionary.h \
+ /opt/root_v6-26-00/include/ESTLType.h \
+ /opt/root_v6-26-00/include/TObjArray.h \
+ /opt/root_v6-26-00/include/TSeqCollection.h \
+ /opt/root_v6-26-00/include/TCollection.h \
+ /opt/root_v6-26-00/include/TIterator.h \
+ /opt/root_v6-26-00/include/TVirtualRWMutex.h \
+ /opt/root_v6-26-00/include/TVirtualMutex.h \
+ /opt/root_v6-26-00/include/ROOT/RRangeCast.hxx \
+ /opt/root_v6-26-00/include/ROOT/RSpan.hxx \
+ /opt/root_v6-26-00/include/ROOT/span.hxx /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/bits/streambuf_iterator.h \
+ /usr/include/c++/11/streambuf /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \
  /usr/include/c++/11/bits/locale_classes.tcc \
  /usr/include/c++/11/system_error \
  /usr/include/c++/11/x86_64-redhat-linux/bits/error_constants.h \
- /usr/include/c++/11/stdexcept /usr/include/c++/11/streambuf \
- /usr/include/c++/11/bits/streambuf.tcc \
+ /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/streambuf.tcc \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/unordered_set.h \
+ /opt/root_v6-26-00/include/TUUID.h /opt/root_v6-26-00/include/TList.h \
+ /opt/root_v6-26-00/include/TBuffer.h \
+ /opt/root_v6-26-00/include/TDataType.h \
+ /opt/root_v6-26-00/include/Bytes.h /opt/root_v6-26-00/include/Byteswap.h \
+ /opt/root_v6-26-00/include/TDatime.h /opt/root_v6-26-00/include/TUrl.h \
+ /opt/root_v6-26-00/include/ROOT/RConcurrentHashColl.hxx \
+ /opt/root_v6-26-00/include/Rtypes.h \
+ /opt/root_v6-26-00/include/ROOT/TRWSpinLock.hxx \
+ /opt/root_v6-26-00/include/ROOT/TSpinMutex.hxx \
+ /usr/include/c++/11/condition_variable /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/ctime \
+ /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/mutex \
+ /opt/root_v6-26-00/include/TTree.h \
+ /opt/root_v6-26-00/include/ROOT/TIOFeatures.hxx \
+ /opt/root_v6-26-00/include/TArrayD.h /opt/root_v6-26-00/include/TArray.h \
+ /opt/root_v6-26-00/include/TArrayI.h \
+ /opt/root_v6-26-00/include/TAttFill.h \
+ /opt/root_v6-26-00/include/TAttLine.h \
+ /opt/root_v6-26-00/include/TAttMarker.h \
+ /opt/root_v6-26-00/include/TVirtualTreePlayer.h \
+ /opt/root_v6-26-00/include/TBranch.h \
+ /opt/root_v6-26-00/include/TBranchCacheInfo.h \
+ /opt/root_v6-26-00/include/TBits.h \
+ /home/laura/G4CATS_root_input_2/include/B4FileGeneratorTree.hh \
+ /home/laura/G4CATS_root_input_2/include/B4FileGenerator.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4ThreeVector.hh \
+ /opt/geant4_v10.5.1/include/Geant4/globals.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4ios.hh \
+ /opt/geant4_v10.5.1/include/Geant4/G4Types.hh \
+ /usr/include/c++/11/complex /usr/include/c++/11/sstream \
+ /usr/include/c++/11/istream /usr/include/c++/11/ios \
  /usr/include/c++/11/bits/basic_ios.h \
  /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
  /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_base.h \
- /usr/include/c++/11/bits/streambuf_iterator.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_inline.h \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /opt/geant4_v10.5.1/include/Geant4/tls.hh \
- /opt/geant4_v10.5.1/include/Geant4/globals.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4ios.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Types.hh \
- /usr/include/c++/11/iostream \
+ /opt/geant4_v10.5.1/include/Geant4/tls.hh /usr/include/c++/11/iostream \
  /opt/geant4_v10.5.1/include/Geant4/G4String.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4String.icc \
  /opt/geant4_v10.5.1/include/Geant4/templates.hh \
@@ -206,87 +257,14 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /opt/geant4_v10.5.1/include/Geant4/G4VExceptionHandler.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4ExceptionSeverity.hh \
  /opt/geant4_v10.5.1/include/Geant4/G4EnvironmentUtils.hh \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/iomanip \
- /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/time_members.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
- /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/mutex \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/c++/11/bits/std_mutex.h \
- /usr/include/c++/11/bits/unique_lock.h \
- /home/laura/G4CATS_root_input_2/include/B4RunAction.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4UserRunAction.hh \
- /home/laura/G4CATS_root_input_2/include/B4cEventAction.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4UserEventAction.hh \
- /home/laura/G4CATS_root_input_2/include/B4cCalorHit.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4VHit.hh \
- /opt/geant4_v10.5.1/include/Geant4/globals.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4THitsCollection.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4VHitsCollection.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Allocator.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4AllocatorPool.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4Allocator.hh \
- /opt/geant4_v10.5.1/include/Geant4/G4ThreeVector.hh \
+ /usr/include/c++/11/bits/quoted_string.h \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /opt/geant4_v10.5.1/include/Geant4/CLHEP/Utility/defs.h \
- /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /opt/geant4_v10.5.1/include/Geant4/G4Threading.hh \
- /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/this_thread_sleep.h \
- /usr/include/c++/11/condition_variable /usr/include/c++/11/future \
- /usr/include/c++/11/bits/atomic_futex.h \
- /usr/include/c++/11/bits/std_function.h \
- /opt/root_v6-26-00/include/TFile.h \
- /opt/root_v6-26-00/include/Compression.h \
- /opt/root_v6-26-00/include/TDirectoryFile.h \
- /opt/root_v6-26-00/include/TDirectory.h \
- /opt/root_v6-26-00/include/TNamed.h /opt/root_v6-26-00/include/TObject.h \
- /opt/root_v6-26-00/include/TStorage.h \
- /opt/root_v6-26-00/include/TVersionCheck.h \
- /opt/root_v6-26-00/include/RVersion.h \
- /opt/root_v6-26-00/include/TString.h /opt/root_v6-26-00/include/TClass.h \
- /opt/root_v6-26-00/include/TDictionary.h \
- /opt/root_v6-26-00/include/ESTLType.h \
- /opt/root_v6-26-00/include/TObjArray.h \
- /opt/root_v6-26-00/include/TSeqCollection.h \
- /opt/root_v6-26-00/include/TCollection.h \
- /opt/root_v6-26-00/include/TIterator.h \
- /opt/root_v6-26-00/include/TVirtualRWMutex.h \
- /opt/root_v6-26-00/include/TVirtualMutex.h \
- /opt/root_v6-26-00/include/ROOT/RRangeCast.hxx \
- /opt/root_v6-26-00/include/ROOT/RSpan.hxx \
- /opt/root_v6-26-00/include/ROOT/span.hxx /usr/include/c++/11/iterator \
- /usr/include/c++/11/bits/stream_iterator.h /usr/include/c++/11/cassert \
- /usr/include/assert.h /usr/include/c++/11/unordered_set \
- /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/unordered_set.h \
- /opt/root_v6-26-00/include/TUUID.h /opt/root_v6-26-00/include/TList.h \
- /opt/root_v6-26-00/include/TBuffer.h \
- /opt/root_v6-26-00/include/TDataType.h \
- /opt/root_v6-26-00/include/Bytes.h /opt/root_v6-26-00/include/Byteswap.h \
- /opt/root_v6-26-00/include/TDatime.h /opt/root_v6-26-00/include/TUrl.h \
- /opt/root_v6-26-00/include/ROOT/RConcurrentHashColl.hxx \
- /opt/root_v6-26-00/include/Rtypes.h \
- /opt/root_v6-26-00/include/ROOT/TRWSpinLock.hxx \
- /opt/root_v6-26-00/include/ROOT/TSpinMutex.hxx \
- /opt/root_v6-26-00/include/TTree.h \
- /opt/root_v6-26-00/include/ROOT/TIOFeatures.hxx \
- /opt/root_v6-26-00/include/TArrayD.h /opt/root_v6-26-00/include/TArray.h \
- /opt/root_v6-26-00/include/TArrayI.h \
- /opt/root_v6-26-00/include/TAttFill.h \
- /opt/root_v6-26-00/include/TAttLine.h \
- /opt/root_v6-26-00/include/TAttMarker.h \
- /opt/root_v6-26-00/include/TVirtualTreePlayer.h \
- /opt/root_v6-26-00/include/TBranch.h \
- /opt/root_v6-26-00/include/TBranchCacheInfo.h \
- /opt/root_v6-26-00/include/TBits.h
+ /opt/geant4_v10.5.1/include/Geant4/CLHEP/Vector/ThreeVector.icc
